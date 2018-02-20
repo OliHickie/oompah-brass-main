@@ -16,10 +16,10 @@
         <div class="row">
             <div class="col-md-2">
                 <!--adapted bootstrap code to allow flex-column at medium screen size and above-->
-                <nav class="navbar navbar-expand-md navbar-light bg-light  flex-md-column">
-                    <a class="navbar-brand" href="#">Navbar</a>
+                <nav class="navbar navbar-expand-md navbar-dark flex-md-column">
+
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span><i class="bar-icon fa fa-bars"></i></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav flex-md-column">
@@ -44,26 +44,33 @@
                 <!--end-->
             </div>
             <div class="col-md-8">
-                <div class="jumbotron jumbotron-fluid">
+
+                <div class="main-heading jumbotron jumbotron-fluid bg-image-nathan text-center">
                     <div class="container">
-                        <h1 class="display-4">Oompah Brass</h1>
-                        <p class="lead">The U.K's Original Rock 'n' Roll Oompah Band</p>
+                        <h1 class="display-4 main-title">Oompah Brass</h1>
+                        <p class="lead main-lead">The U.K's Original Rock 'n' Roll Oompah Band</p>
                     </div>
                 </div>
+
                 <section>
+                    <hr class="hr-pink">
                     <header>
-                        <h2>We are Oompah Brass</h2>
+                        <div class="text-center">
+                            <h2 class="page-header">We are Oompah Brass</h2>
+                        </div>
                     </header>
-                    <hr>
-                    <!--bootstrap code for card - adapted with text center -->
-                    <div class="card text-center">
-                        <blockquote class="blockquote mb-0">
-                            <p>“Legends in Lederhosen!”</p>
-                            <footer class="blockquote-footer">Chris Evans <cite title="Source Title">BBC Radio 2</cite></footer>
-                        </blockquote>
+
+                    <!--bootstrap code for card - with text center -->
+                    <div class="d-flex justify-content-center">
+                        <div class="box box-white card text-center">
+                            <blockquote class="margin-10px blockquote">
+                                <p>“Legends in Lederhosen!”</p>
+                                <footer class="blockquote-footer">Chris Evans <cite title="Source Title">BBC Radio 2</cite></footer>
+                            </blockquote>
+                        </div>
                     </div>
                     <!--end-->
-                    <div>
+                    <div class="text-block">
                         <p>
                             Oompah Brass are a five-piece brass group specialising in virtuosic and high-energy performances of rock and pop classics.
                         </p>
@@ -72,72 +79,83 @@
                             Queen, Bon Jovi, Led Zeppelin, Taylor Swift and Katy Perry to name just a few!
                         </p>
                         <p>
-                            Oompah Brass are the resident band at two of London's coolest bierkellers - <a class="text_link" href="http://katzenjammers.co.uk/" target="_blank">Katzenjammers</a>, and the <a class="text_link" href="http://www.octoberfestpub.com/"
+                            Oompah Brass are the resident band at two of London's coolest bierkellers - <a class="text-link" href="http://katzenjammers.co.uk/" target="_blank">Katzenjammers</a>, and the <a class="text-link" href="http://www.octoberfestpub.com/"
                                 target="_blank">Octoberfest Pub</a>.
                         </p>
                         <p>
-                            <a href="live.html" target="_blank" class="text_link">Check when we are playing</a> and come down and say hi!
+                            <a href="live.html" target="_blank" class="text-link">Check when we are playing</a> and come down and say hi!
                         </p>
                     </div>
-                    <!--bootstrap code for card - adapted with text center -->
-                    <div class="card">
-                        <blockquote class="blockquote mb-0 text-center">
-                            <p>“A rock 'n' roll oompah band. Tremendous!”</p>
-                            <footer class="blockquote-footer">Richard Bacon <cite title="Source Title">BBC Radio 5 Live</cite></footer>
-                        </blockquote>
+                    <hr class="hr-pink">
+                    <!--bootstrap code for card - with text center -->
+                    <div class="d-flex justify-content-center">
+                        <div class="box box-white card">
+                            <blockquote class="blockquote margin-10px text-center">
+                                <p>“A rock 'n' roll oompah band. Tremendous!”</p>
+                                <footer class="blockquote-footer">Richard Bacon <cite title="Source Title">BBC Radio 5 Live</cite></footer>
+                            </blockquote>
+                        </div>
                     </div>
                     <!--end-->
                 </section>
+                <hr class="hr-pink">
                 <article>
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h5 class="card-title">As seen at:</h5>
-                            <p class="card-text">Oompah Brass are ideal for a range of events, from weddings to festivals. Here are a few of our recent performances:</p>
-                            <ul class="list-group">
-                                <li class="list-group-item">Bestival</li>
-                                <li class="list-group-item">The Isle Of Wight Festival</li>
-                                <li class="list-group-item">The Edinburgh Fringe Festival</li>
-                                <li class="list-group-item">Snowbombing</li>
-                                <li class="list-group-item">Kendal Calling</li>
-                                <li class="list-group-item">Looe Music Festival</li>
-                                <li class="list-group-item">Oktoberfests across the UK and abroad</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary">Hear the band</a>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h5 class="card-title">Collaborations:</h5>
-                            <p class="card-text">Oompah Brass have supported a host of musicians and comedians including:</p>
-                            <ul class="list-group">
-                                <li class="list-group-item">Stephen K. Amos</li>
-                                <li class="list-group-item">Ross Noble</li>
-                                <li class="list-group-item">Frank Skinner</li>
-                                <li class="list-group-item">Hayseed Dixie</li>
-                                <li class="list-group-item">Chas 'n' Dave</li>
-                                <li class="list-group-item">Alex Horne and The Horne Section</li>
-                                <li class="list-group-item">Jake Yapp</li>
-                                <li class="list-group-item">Rainer Hersch and the London Firebird Orchestra</li>
-                                <li class="list-group-item">Al Murray</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary">Videos</a>
-                        </div>
-                    </div>
-                </article>
+                    <div class="d-flex justify-content-center">
+                        <div class="box box-transparent card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">As seen at:</h5>
 
-                <hr>
+                                <ul class="list list-group">
+                                    <li class="list-item">Bestival</li>
+                                    <li class="list-item">The Isle Of Wight Festival</li>
+                                    <li class="list-item">The Edinburgh Fringe Festival</li>
+                                    <li class="list-item">Snowbombing</li>
+                                    <li class="list-item">Kendal Calling</li>
+                                    <li class="list-item">Looe Music Festival</li>
+                                    <li class="list-item">Oktoberfests across the UK and abroad</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                         <a href="#" class="btn btn-primary button-pink btn-margin">Hear the band</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="d-flex justify-content-center">
+                        <div class="box box-white card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Collaborations:</h5>
+                                <p class="card-text">Oompah Brass have supported a host of musicians and comedians including:</p>
+                                <ul class="list list-group">
+                                    <li class="list-item">Stephen K. Amos</li>
+                                    <li class="list-item">Ross Noble</li>
+                                    <li class="list-item">Frank Skinner</li>
+                                    <li class="list-item">Hayseed Dixie</li>
+                                    <li class="list-item">Chas 'n' Dave</li>
+                                    <li class="list-item">The Horne Section</li>
+                                    <li class="list-item">Jake Yapp</li>
+                                    <li class="list-item">Al Murray</li>
+                                    <li class="list-item">Rainer Hersch and the London Firebird Orchestra</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class="text-center">
+                <a href="#navbarNav" class="btn btn-primary button-pink btn-margin">Back to the top</a>
+                </div>
+                <hr class="hr-pink">
             </div>
             <div class="col-md-2">
                 <footer>
                     <div>
                         <ul class="nav justify-content-center flex-md-column">
-                            <li class="nav-item"><a target="_blank" href="https://www.facebook.com/oompahbrass"><i class="fa fa-facebook social_media_link" aria-hidden="true"></i></a></li>
-                            <li class="nav-item"><a target="_blank" href="https://twitter.com/oompahbrass"><i class="fa fa-twitter social_media_link" aria-hidden="true"></i></a></li>
-                            <li class="nav-item"><a target="_blank" href="https://instagram.com/oompahbrass"><i class="fa fa-instagram social_media_link" aria-hidden="true"></i></a></li>
-                            <li class="nav-item"><a target="_blank" href="https://soundcloud.com/oompahbrass"><i class="fa fa-soundcloud social_media_link" aria-hidden="true"></i></a></li>
-                            <li class="nav-item"><a target="_blank" href="https://oompahbrass.bandcamp.com"><i class="fa fa-bandcamp social_media_link" aria-hidden="true"></i></a></li>
+                            <li class="nav-item"><a target="_blank" href="https://www.facebook.com/oompahbrass"><i class="fa fa-facebook social-media-link" aria-hidden="true"></i></a></li>
+                            <li class="nav-item"><a target="_blank" href="https://twitter.com/oompahbrass"><i class="fa fa-twitter social-media-link" aria-hidden="true"></i></a></li>
+                            <li class="nav-item"><a target="_blank" href="https://instagram.com/oompahbrass"><i class="fa fa-instagram social-media-link" aria-hidden="true"></i></a></li>
+                            <li class="nav-item"><a target="_blank" href="https://soundcloud.com/oompahbrass"><i class="fa fa-soundcloud social-media-link" aria-hidden="true"></i></a></li>
+                            <li class="nav-item"><a target="_blank" href="https://oompahbrass.bandcamp.com"><i class="fa fa-bandcamp social-media-link" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </footer>
