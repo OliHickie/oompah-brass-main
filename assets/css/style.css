@@ -8,7 +8,7 @@ Bright pink: #db2785
 
 /* ==========================General */
 
-body {
+.body-bg-black {
   font-family: 'Roboto', sans-serif;
   color: #e8e3e7;
   background-color: #000000;
@@ -30,71 +30,97 @@ h6 {
 }
 
 
-.bg-image-nathan {
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.9) 0%,
-      rgba(0, 0, 0, 0.7) 3%,
-      rgba(0, 0, 0, 0.5) 5%,
-      rgba(0, 0, 0, 0.3) 10%,
-      rgba(0, 0, 0, 0.5) 90%,
-      rgba(0, 0, 0, 0.7) 95%,
-      rgba(0, 0, 0, 0.9) 100%
-    ), url("../images/nathan.JPG");
+.main-heading-bg {
+  background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
+  rgba(0, 0, 0, 0.7) 3%,
+  rgba(0, 0, 0, 0.5) 5%,
+  rgba(0, 0, 0, 0.3) 10%,
+  rgba(0, 0, 0, 0.5) 90%,
+  rgba(0, 0, 0, 0.7) 95%,
+  rgba(0, 0, 0, 0.9) 100%), url("../images/nathan.JPG");
   background-size: cover;
   background-position: top;
 }
 
-.page-header{
+
+.page-header {
   font-size: 24px;
   text-transform: uppercase;
   text-shadow: 0 0 10px #fff;
   letter-spacing: 2px;
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.hr-pink{
+.hr-pink {
   width: 100px;
   height: 6px;
   border: none;
-  background-color: #e40777;
-  
+  background-color: #db2785;
+
 }
 
-.margin-10px{
+.margin-10px {
   margin: 10px;
 }
-.btn-margin{
+
+.btn-margin {
   margin: 30px;
 }
 
-.button-pink{
-  background-color: #e40777;
+.button-pink {
+  background-color: #db2785;
   border: none;
   border-radius: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.button-pink:hover{
+
+.button-pink:hover {
   box-shadow: 0 0 25px #fff;
   background-color: #f7a8cf;
 }
-.button-pink:active{
-  border:none;
+
+.button-pink:active {
+  border: none;
   box-shadow: none;
 }
+
 /* =========================Nav*/
 
-.bar-icon{
+.bar-icon {
   color: #db2785;
   font-size: 24px;
-} 
+}
+
+.nav-item-icon {
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+.nav-pink {
+  background-color: #000000;
+}
+
+.nav-pink .nav-link-pink {
+  color: #db2785;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-pink .nav-link-pink:hover,
+.active-nav .nav-link-pink {
+  text-shadow: 0 0 10px #ffffff;
+  color: #ffffff;
+}
 
 
 /* =========================Index Page*/
 
 .main-heading {
-  height: 400px;
+  height: 350px;
   display: flex;
   align-items: center;
 }
@@ -105,40 +131,55 @@ h6 {
   word-spacing: 12px;
   text-shadow: 0 0 10px #fff;
   font-weight: 400;
- 
+  margin-bottom: 30px;
+
 }
 
-.main-lead{
+.main-lead {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 0 0 10px #fff;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.box{
-  width:80%;
+.box {
+  width: 80%;
   margin-top: 30px;
   margin-bottom: 30px;
-  
+  border: none;
+
 }
-.box-white{
+
+.box-white {
   background-color: #e8e3e7;
   color: #26272b;
 }
-.box-transparent{
+
+.box-transparent {
   background-color: transparent;
   color: #e8e3e7;
 }
 
-.list{
+.list {
+  line-height: 2;
+  font-size: 20px;
+}
+
+.list-title {
+  font-size: 26px;
   line-height: 2;
 }
-.list-item{
+
+.list-item {
   list-style-type: none;
 }
 
-.text-block{
-  margin:20px 20px;
+.text-block {
+  margin: 20px 20px;
   font-weight: 300;
+  font-size: 1.25rem;
 }
 
 .text-link {
@@ -174,9 +215,87 @@ h6 {
 
 /*==================================Media Queries*/
 
-@media (min-width: 992px){
+@media (min-width: 768px) {
+
+  .box {
+    width: 70%;
+  }
+
+  .body-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/nathan.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .main-heading-bg {
+    background-color: transparent;
+    background: transparent;
+  }
+
+  .main-heading{
+    margin-top: 50px;
+  }
+
+  .nav-pink .nav-link-pink {
+    display: inline-block;
+    color: #e8e3e7;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .nav-pink .nav-link-pink:hover {
+    background-color: #e40777;
+  }
+
+  .nav-pink {
+    background-color: transparent;
+    top:30px;
+    left: 10px;
+    position: fixed;
+  }
+
+  .active-nav .nav-link-pink {
+    text-shadow: none;
+    background-color: #e40777;
+  }
+
+  .social-nav {
+    
+    position: fixed;
+    right: 30px;
+    top:40px;
+  }
+
+  .social-media-link {
+    margin: 10px;
+    font-size: 28px;
+  }
   
-  .box{
-   width: 70%;
- }
+  .back-button{
+    display: none;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .main-title {
+    font-size: 70px;
+  }
+  
+  .main-lead {
+    font-size: 28px;
+  }
+  
+  .nav-pink .nav-link-pink{
+    font-size: 20px;
+  }
+  
+  .social-media-link{
+    font-size: 36px;
+  }
 }
