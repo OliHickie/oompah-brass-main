@@ -31,13 +31,7 @@ h6 {
 
 
 .main-heading-bg {
-  background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
-  rgba(0, 0, 0, 0.7) 3%,
-  rgba(0, 0, 0, 0.5) 5%,
-  rgba(0, 0, 0, 0.3) 10%,
-  rgba(0, 0, 0, 0.5) 90%,
-  rgba(0, 0, 0, 0.7) 95%,
-  rgba(0, 0, 0, 0.9) 100%), url("../images/nathan.JPG");
+  
   background-size: cover;
   background-position: top;
 }
@@ -119,6 +113,20 @@ h6 {
 
 /* =========================Index Page*/
 
+
+ .index-heading-bg{
+  background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
+  rgba(0, 0, 0, 0.7) 3%,
+  rgba(0, 0, 0, 0.5) 5%,
+  rgba(0, 0, 0, 0.3) 10%,
+  rgba(0, 0, 0, 0.5) 90%,
+  rgba(0, 0, 0, 0.7) 95%,
+  rgba(0, 0, 0, 0.9) 100%), url("../images/nathan.JPG");
+  background-size: cover;
+  background-position: top;
+}
+ 
+
 .main-heading {
   height: 350px;
   display: flex;
@@ -196,12 +204,26 @@ h6 {
 }
 
 
+/* =========================Media Page*/
+
+.media-heading-bg{
+background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
+  rgba(0, 0, 0, 0.7) 3%,
+  rgba(0, 0, 0, 0.5) 5%,
+  rgba(0, 0, 0, 0.3) 10%,
+  rgba(0, 0, 0, 0.5) 90%,
+  rgba(0, 0, 0, 0.7) 95%,
+  rgba(0, 0, 0, 0.9) 100%), url("../images/oktoberfest.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
 
 /* =========================Social Media*/
 
 .social-media-link {
   color: #e40777;
-  font-size: 36px;
+  font-size: 24px;
   transition-property: color text-shadow;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
@@ -221,7 +243,7 @@ h6 {
     width: 70%;
   }
 
-  .body-bg {
+  .index-bg {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/nathan.JPG");
     background-repeat: no-repeat;
     background-size: cover;
@@ -229,7 +251,7 @@ h6 {
     background-attachment: fixed;
   }
 
-  .main-heading-bg {
+  .index-heading-bg {
     background-color: transparent;
     background: transparent;
   }
@@ -263,7 +285,7 @@ h6 {
     text-shadow: none;
     background-color: #e40777;
   }
-
+  
   .social-nav {
     
     position: fixed;
@@ -278,6 +300,21 @@ h6 {
   
   .back-button{
     display: none;
+  }
+
+/*==========MQ- media page*/
+
+ .media-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/oktoberfest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+  }
+
+  .media-heading-bg {
+    background-color: transparent;
+    background: transparent;
   }
 
 }
