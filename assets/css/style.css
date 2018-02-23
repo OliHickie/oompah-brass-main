@@ -222,19 +222,20 @@ background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
   border: solid 2px #ffffff;
   box-shadow: 0 0 10px #fff;
 }
+
 .media-youtube{
   display: block;
   margin: 20px auto;
   width: 80%;
   height: auto;
   
-
 }
 
 .my-carousel{
   
   border: solid 2px #ffffff;
   box-shadow: 0 0 10px #fff;
+  margin-bottom: 20px;
   
   
 }
@@ -336,7 +337,19 @@ background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
     background-color: transparent;
     background: transparent;
   }
-
+  
+  .media-youtube{
+    width: 560px;
+    height: 315px;
+  }
+  
+  .my-carousel{
+    margin-bottom: 40px;
+  }
+  
+  .hr-bottom{
+    margin-bottom: 40px;
+  }
 
 }
 
