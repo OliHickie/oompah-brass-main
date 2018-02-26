@@ -240,6 +240,39 @@ background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
   
 }
 
+/* =========================Education Page*/
+
+.education-heading-bg{
+background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
+  rgba(0, 0, 0, 0.7) 3%,
+  rgba(0, 0, 0, 0.5) 5%,
+  rgba(0, 0, 0, 0.3) 10%,
+  rgba(0, 0, 0, 0.5) 90%,
+  rgba(0, 0, 0, 0.7) 95%,
+  rgba(0, 0, 0, 0.9) 100%), url("../images/education1.JPG");
+  background-size: cover;
+  background-position: center;
+}
+
+/* =========================Live Page*/
+
+.live-heading-bg{
+background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
+  rgba(0, 0, 0, 0.7) 3%,
+  rgba(0, 0, 0, 0.5) 5%,
+  rgba(0, 0, 0, 0.3) 10%,
+  rgba(0, 0, 0, 0.5) 90%,
+  rgba(0, 0, 0, 0.7) 95%,
+  rgba(0, 0, 0, 0.9) 100%), url("../images/beach_stage.JPG");
+  background-size: cover;
+  background-position: center;
+}
+.calendar {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
 /* =========================Social Media*/
 
 .social-media-link {
