@@ -31,7 +31,7 @@ h6 {
 
 
 .main-heading-bg {
-  
+
   background-size: cover;
   background-position: top;
 }
@@ -113,8 +113,7 @@ h6 {
 
 /* =========================Index Page*/
 
-
- .index-heading-bg{
+.index-heading-bg {
   background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
   rgba(0, 0, 0, 0.7) 3%,
   rgba(0, 0, 0, 0.5) 5%,
@@ -125,7 +124,7 @@ h6 {
   background-size: cover;
   background-position: top;
 }
- 
+
 
 .main-heading {
   height: 350px;
@@ -206,8 +205,8 @@ h6 {
 
 /* =========================Media Page*/
 
-.media-heading-bg{
-background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
+.media-heading-bg {
+  background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
   rgba(0, 0, 0, 0.7) 3%,
   rgba(0, 0, 0, 0.5) 5%,
   rgba(0, 0, 0, 0.3) 10%,
@@ -218,32 +217,35 @@ background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
   background-position: top;
 }
 
-.soundcloud{
-  border: solid 2px #ffffff;
-  box-shadow: 0 0 10px #fff;
+.media-text {
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
-.media-youtube{
+.soundcloud {
+  border: solid 2px #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 10px;
+}
+
+.media-youtube {
   display: block;
   margin: 20px auto;
   width: 80%;
   height: auto;
-  
 }
 
-.my-carousel{
-  
+.my-carousel {
   border: solid 2px #ffffff;
   box-shadow: 0 0 10px #fff;
   margin-bottom: 20px;
-  
-  
 }
 
 /* =========================Education Page*/
 
-.education-heading-bg{
-background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
+.education-heading-bg {
+  background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
   rgba(0, 0, 0, 0.7) 3%,
   rgba(0, 0, 0, 0.5) 5%,
   rgba(0, 0, 0, 0.3) 10%,
@@ -256,8 +258,8 @@ background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
 
 /* =========================Live Page*/
 
-.live-heading-bg{
-background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
+.live-heading-bg {
+  background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
   rgba(0, 0, 0, 0.7) 3%,
   rgba(0, 0, 0, 0.5) 5%,
   rgba(0, 0, 0, 0.3) 10%,
@@ -267,6 +269,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
   background-size: cover;
   background-position: center;
 }
+
 .calendar {
   width: 80%;
   margin: 0 auto;
@@ -274,8 +277,8 @@ background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
 
 /* =========================Contact Page*/
 
-.contact-heading-bg{
-background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
+.contact-heading-bg {
+  background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
   rgba(0, 0, 0, 0.7) 3%,
   rgba(0, 0, 0, 0.5) 5%,
   rgba(0, 0, 0, 0.3) 10%,
@@ -304,15 +307,14 @@ background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
 
 /*==================================Media Queries*/
 
-@media (min-width: 768px){
-  .media-youtube{
+@media (min-width: 768px) {
+  .media-youtube {
     width: 560px;
     height: 315px;
   }
 }
 
 @media (min-width: 992px) {
-
   .box {
     width: 70%;
   }
@@ -330,7 +332,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
     background: transparent;
   }
 
-  .main-heading{
+  .main-heading {
     margin-top: 50px;
   }
 
@@ -350,7 +352,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
 
   .nav-pink {
     background-color: transparent;
-    top:30px;
+    top: 30px;
     left: 10px;
     position: fixed;
   }
@@ -359,26 +361,25 @@ background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
     text-shadow: none;
     background-color: #e40777;
   }
-  
+
   .social-nav {
-    
     position: fixed;
     right: 30px;
-    top:40px;
+    top: 40px;
   }
 
   .social-media-link {
     margin: 10px;
     font-size: 28px;
   }
-  
-  .back-button{
+
+  .back-button {
     display: none;
   }
 
-/*==========MQ- media page*/
-
- .media-bg {
+  /*==========MQ- media page*/
+  
+  .media-bg {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/oktoberfest.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -390,16 +391,16 @@ background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
     background-color: transparent;
     background: transparent;
   }
-  
-  .my-carousel{
-    margin-bottom: 40px;
-  }
-  
-  .hr-bottom{
+
+  .my-carousel {
     margin-bottom: 40px;
   }
 
-/*==========MQ- Education page*/  
+  .hr-bottom {
+    margin-bottom: 40px;
+  }
+
+  /*==========MQ- Education page*/
   .education-bg {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/education1.JPG");
     background-repeat: no-repeat;
@@ -412,7 +413,8 @@ background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
     background: transparent;
   }
 
-/*==========MQ- live page*/
+  /*==========MQ- live page*/
+  
   .live-bg {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/beach_stage.JPG");
     background-repeat: no-repeat;
@@ -420,44 +422,42 @@ background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
     background-position: center;
     background-attachment: fixed;
   }
+  
   .live-heading-bg {
     background-color: transparent;
     background: transparent;
   }
-  
+
   /*==========MQ- contact page*/
   
-.contact-bg {
+  .contact-bg {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/lucy.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
   }
+  
   .contact-heading-bg {
     background-color: transparent;
     background: transparent;
   }
-
 }
 
 @media (min-width: 1200px) {
   .main-title {
     font-size: 70px;
   }
-  
+
   .main-lead {
     font-size: 28px;
   }
-  
-  .nav-pink .nav-link-pink{
+
+  .nav-pink .nav-link-pink {
     font-size: 20px;
   }
-  
-  .social-media-link{
+
+  .social-media-link {
     font-size: 36px;
   }
-  
 }
-
-
