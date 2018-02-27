@@ -14,6 +14,11 @@ Bright pink: #db2785
   background-color: #000000;
 }
 
+.page-wrapper{
+  width:100%; 
+  overflow:hidden; 
+}
+
 h1,
 h2,
 h3,
