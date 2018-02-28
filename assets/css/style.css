@@ -28,26 +28,27 @@ h6 {
   font-family: 'Raleway', sans-serif;
 }
 
+.no-padding{
+  margin: 0;
+}
+
 .nav-position {
   position: fixed;
   z-index: 1;
 }
 
-
 .main-heading-bg {
-
   background-size: cover;
   background-position: top;
 }
 
-
 .page-header {
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
   text-shadow: 0 0 10px #fff;
   letter-spacing: 2px;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 15px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -57,7 +58,6 @@ h6 {
   height: 6px;
   border: none;
   background-color: #db2785;
-
 }
 
 .margin-10px {
@@ -99,7 +99,13 @@ h6 {
 }
 
 .nav-pink {
-  background-color: #000000;
+  background-color: #000000d1;
+  border-bottom: 0.5px solid #b1acacd9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .nav-pink .nav-link-pink {
@@ -117,50 +123,38 @@ h6 {
 
 /* =========================Index Page*/
 
-.index-heading-bg {
-  background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
-  rgba(0, 0, 0, 0.7) 3%,
-  rgba(0, 0, 0, 0.5) 5%,
-  rgba(0, 0, 0, 0.3) 10%,
-  rgba(0, 0, 0, 0.5) 90%,
-  rgba(0, 0, 0, 0.7) 95%,
-  rgba(0, 0, 0, 0.9) 100%), url("../images/nathan.JPG");
-  background-size: cover;
-  background-position: top;
-}
-
-
 .main-heading {
   height: 350px;
   display: flex;
   align-items: center;
+  padding-top: 150px;
 }
 
 .main-title {
   text-transform: uppercase;
-  letter-spacing: 9px;
+  letter-spacing: 8px;
   word-spacing: 12px;
   text-shadow: 0 0 10px #fff;
   font-weight: 400;
   margin-bottom: 30px;
-
+  font-size: 50px;
 }
 
 .main-lead {
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-shadow: 0 0 10px #fff;
-  font-size: 24px;
+  font-size: 16px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.box {
+.quote-box {
   width: 80%;
   margin-top: 30px;
   margin-bottom: 30px;
+  padding: 10px;
   border: none;
-
 }
 
 .box-white {
@@ -174,13 +168,14 @@ h6 {
 }
 
 .list {
-  line-height: 2;
-  font-size: 20px;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 .list-title {
-  font-size: 26px;
-  line-height: 2;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: uppercase
 }
 
 .list-item {
@@ -190,7 +185,11 @@ h6 {
 .text-block {
   margin: 20px 20px;
   font-weight: 300;
-  font-size: 1.25rem;
+  font-size: 18px;
+}
+
+.text-block-end-hr{
+  margin-top: 40px;
 }
 
 .text-link {
@@ -206,31 +205,11 @@ h6 {
   text-decoration: none;
 }
 
-
 /* =========================Media Page*/
-
-.media-heading-bg {
-  background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
-  rgba(0, 0, 0, 0.7) 3%,
-  rgba(0, 0, 0, 0.5) 5%,
-  rgba(0, 0, 0, 0.3) 10%,
-  rgba(0, 0, 0, 0.5) 90%,
-  rgba(0, 0, 0, 0.7) 95%,
-  rgba(0, 0, 0, 0.9) 100%), url("../images/oktoberfest.jpg");
-  background-size: cover;
-  background-position: top;
-}
 
 .media-text {
   margin-top: 0;
   margin-bottom: 40px;
-}
-
-.soundcloud {
-  border: solid 2px #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #ffffff;
-  border-radius: 10px;
 }
 
 .media-youtube {
@@ -238,59 +217,6 @@ h6 {
   margin: 20px auto;
   width: 80%;
   height: auto;
-}
-
-.my-carousel {
-  border: solid 2px #ffffff;
-  box-shadow: 0 0 10px #fff;
-  margin-bottom: 20px;
-}
-
-/* =========================Education Page*/
-
-.education-heading-bg {
-  background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
-  rgba(0, 0, 0, 0.7) 3%,
-  rgba(0, 0, 0, 0.5) 5%,
-  rgba(0, 0, 0, 0.3) 10%,
-  rgba(0, 0, 0, 0.5) 90%,
-  rgba(0, 0, 0, 0.7) 95%,
-  rgba(0, 0, 0, 0.9) 100%), url("../images/education1.JPG");
-  background-size: cover;
-  background-position: center;
-}
-
-/* =========================Live Page*/
-
-.live-heading-bg {
-  background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
-  rgba(0, 0, 0, 0.7) 3%,
-  rgba(0, 0, 0, 0.5) 5%,
-  rgba(0, 0, 0, 0.3) 10%,
-  rgba(0, 0, 0, 0.5) 90%,
-  rgba(0, 0, 0, 0.7) 95%,
-  rgba(0, 0, 0, 0.9) 100%), url("../images/beach_stage.JPG");
-  background-size: cover;
-  background-position: center;
-}
-
-.calendar {
-  width: 80%;
-  margin: 0 auto;
-}
-
-/* =========================Contact Page*/
-
-.contact-heading-bg {
-  background: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
-  rgba(0, 0, 0, 0.7) 3%,
-  rgba(0, 0, 0, 0.5) 5%,
-  rgba(0, 0, 0, 0.3) 10%,
-  rgba(0, 0, 0, 0.5) 90%,
-  rgba(0, 0, 0, 0.7) 95%,
-  rgba(0, 0, 0, 0.9) 100%), url("../images/lucy.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 /* =========================Social Media*/
@@ -309,6 +235,10 @@ h6 {
   color: #f7a8cf;
 }
 
+.social-nav {
+  padding-bottom: 40px;
+}
+
 /*==================================Media Queries*/
 
 @media (min-width: 768px) {
@@ -323,21 +253,18 @@ h6 {
     width: 70%;
   }
 
-  .index-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/nathan.JPG");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-
-  .index-heading-bg {
-    background-color: transparent;
-    background: transparent;
-  }
-
   .main-heading {
     margin-top: 50px;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+  
+  .main-lead{
+    font-size: 18px;
+  }
+  
+  .page-header{
+    font-size: 24;
   }
 
   .nav-pink .nav-link-pink {
@@ -355,7 +282,9 @@ h6 {
   }
 
   .nav-pink {
+    align-items: left;
     background-color: transparent;
+    border: none;
     top: 30px;
     left: 10px;
     position: fixed;
@@ -383,68 +312,8 @@ h6 {
 
   /*==========MQ- media page*/
   
-  .media-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/oktoberfest.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
-  }
-
-  .media-heading-bg {
-    background-color: transparent;
-    background: transparent;
-  }
-
-  .my-carousel {
-    margin-bottom: 40px;
-  }
-
   .hr-bottom {
     margin-bottom: 40px;
-  }
-
-  /*==========MQ- Education page*/
-  .education-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/education1.JPG");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  .education-heading-bg {
-    background-color: transparent;
-    background: transparent;
-  }
-
-  /*==========MQ- live page*/
-  
-  .live-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/beach_stage.JPG");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  
-  .live-heading-bg {
-    background-color: transparent;
-    background: transparent;
-  }
-
-  /*==========MQ- contact page*/
-  
-  .contact-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/lucy.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  
-  .contact-heading-bg {
-    background-color: transparent;
-    background: transparent;
   }
 }
 

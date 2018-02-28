@@ -1,0 +1,66 @@
+.media-heading-bg {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.9) 0%,
+  rgba(0, 0, 0, 0.7) 3%,
+  rgba(0, 0, 0, 0.5) 5%,
+  rgba(0, 0, 0, 0.3) 10%,
+  rgba(0, 0, 0, 0.5) 90%,
+  rgba(0, 0, 0, 0.7) 95%,
+  rgba(0, 0, 0, 0.9) 100%), url("../images/oktoberfest.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.soundcloud {
+  border: solid 2px #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 10px;
+}
+
+.my-carousel {
+  border: solid 2px #ffffff;
+  box-shadow: 0 0 10px #fff;
+  margin-bottom: 20px;
+}
+
+.carousel-indicators .active {
+    background-color: #fff;
+}
+.carousel-indicators{
+  margin-left: 7px;
+   margin-right: 7px;
+}
+.carousel-indicators li {
+   height: 15px;
+   width: 15px;
+   border-radius: 50%;
+   margin-left: 7px;
+   margin-right: 7px;
+   cursor: pointer;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 50px;
+  height: 50px;
+}
+
+/*==========MQ*/
+
+@media (min-width: 992px){
+    .media-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/oktoberfest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+  }
+
+  .media-heading-bg {
+    background-color: transparent;
+    background: transparent;
+  }
+
+  .my-carousel {
+    margin-bottom: 40px;
+  }
+}
