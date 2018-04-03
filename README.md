@@ -38,7 +38,7 @@ On screens over 992px, the navigation and social-media links move to either side
 
 ### Technologies Used
 
-I decided to use **bootstrap 4** with its utilisation of flexbox, to provide a simple structure across all media widths, and to keep intuitive navigation, especially on small screens and mobiles. Where bootstrap code was used I have commented in the code.
+I decided to use **bootstrap 4** to provide a simple structure across all media widths, and to keep intuitive navigation, especially on small screens and mobiles.
 **Git** and **Github** were used for version control.
 I used the following resources for the dynamic/media elements:
 
@@ -60,6 +60,6 @@ The site is live at www.oompahbrass.com
 * I used **Chrome Developer Tools** to test site for responsiveness across different devices. 
 * All links were tested to make sure they were working and that they were opening in a new window.
 * All media/carousel/soundcloud elements were checked for functionality. 
-* I tested the website on various devices such as iPhone, Android phone an iPad at home.
+* I tested the website on various devices such as iPhone, Android phone and iPad.
 
 
