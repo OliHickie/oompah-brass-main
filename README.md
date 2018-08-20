@@ -56,7 +56,7 @@ I then updated the name server information on the band's domain name provider, [
 
 I set up Google Site Verification in order to keep track of the site's performance using [Google Webmaster tools](https://www.google.com/webmasters/).
 
-The site is live at www.oompahbrass.com
+The site is live at https://www.oompahbrass.com
 
 
 ### Testing
