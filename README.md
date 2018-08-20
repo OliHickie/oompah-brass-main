@@ -49,9 +49,9 @@ I used the following resources for the dynamic/media elements:
 
 ### Deployment
 
-The site was initially deployed on [GitHub Pages] (https://pages.github.com/) without a custom domain so that it could be sent to the client for approval before taking over their existing domain.
+The site was initially deployed on [GitHub Pages](https://pages.github.com/) without a custom domain so that it could be sent to the client for approval before taking over their existing domain.
 
-Once approved for deployment, I used Github pages with the band's domain name, together with [Cloudflare] (https://cloudflare.com) where I adjusted the A and CNAME records. 
+Once approved for deployment, I used Github pages with the band's domain name, together with [Cloudflare](https://cloudflare.com) where I adjusted the A and CNAME records. 
 I then updated the name server information on the band's domain name provider, [GoDaddy](https://uk.godaddy.com/). 
 
 I set up Google Site Verification in order to keep track of the site's performance using [Google Webmaster tools](https://www.google.com/webmasters/).
