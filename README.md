@@ -67,6 +67,13 @@ The site is live at www.oompahbrass.com
 * All media/carousel/soundcloud elements were checked for functionality. 
 * I tested the website on various devices such as iPhone, Android phone and iPad.
 
+#### Fixes
+
+* During final tests I found an issue with the social media links on larger screen sizes. 
+They were not able to be clicked due to the main nav bar taking up too much space. 
+I was able to fix this using the max-width property on the nav items.
+* I found an issue with the main navigation alignment in large screen sizes. The alignment needed to be changed to flex-start.
+
 ### Acknowledgements
 
 I used the following sites for inspiration in this project:

@@ -228,6 +228,7 @@ h6 {
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   margin: 20px 10px;
+  z-index: 2;
 }
 
 .social-media-link:hover {
@@ -288,6 +289,7 @@ h6 {
     top: 30px;
     left: 10px;
     position: fixed;
+    max-width: 30%;
   }
 
   .active-nav .nav-link-pink {
