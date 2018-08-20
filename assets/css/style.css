@@ -282,7 +282,7 @@ h6 {
   }
 
   .nav-pink {
-    align-items: left;
+    align-items: flex-start;
     background-color: transparent;
     border: none;
     top: 30px;
