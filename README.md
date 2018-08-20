@@ -38,19 +38,19 @@ On screens over 992px, the navigation and social-media links move to either side
 
 ### Technologies Used
 
-I decided to use **bootstrap 4** to provide a simple structure across all media widths, and to keep intuitive navigation, especially on small screens and mobiles.
-**Git** and **Github** were used for version control.
+I decided to use [bootstrap 4] (https://getbootstrap.com) to provide a simple structure across all media widths, and to keep intuitive navigation, especially on small screens and mobiles.
+**Git** and [Github] (https://github.com) were used for version control.
 I used the following resources for the dynamic/media elements:
 
-* **Feedwind** - used to create the diary, which is updated via the band's google calendar
-* **Youtube** - I embedded Youtube videos via the youtube app to avoid any browser compatibility issues
-* **Soundcloud** - The band had a playlist on soundcloud showcasing their track so I embedded a soundcloud player
+* [Feedwind] (https://feed.mikle.com) - used to create the diary, which is updated via the band's google calendar
+* [Youtube] (https://youtube.com) - I embedded Youtube videos via the youtube app to avoid any browser compatibility issues
+* [Soundcloud] (https://soundcloud.com) - The band had a playlist on soundcloud showcasing their track so I embedded a soundcloud player
 
 
 ### Deployment
 
-The site was initially deployed on GitHub Pages without a custom domain so that it could be sent to the client for approval before taking over their existing domain.
-Once approved for deployment, I used Github pages with the band's domain name, together with **Cloudflare** where I adjusted the A and CNAME records. I then updated the name server information on the band's domain name provider, GoDaddy. I set up **Google Site Verification** in order to keep track of the site's performance using **Google Webmaster tools**.
+The site was initially deployed on [GitHub Pages] (https://pages.github.com/) without a custom domain so that it could be sent to the client for approval before taking over their existing domain.
+Once approved for deployment, I used Github pages with the band's domain name, together with [Cloudflare] (https://cloudflare.com) where I adjusted the A and CNAME records. I then updated the name server information on the band's domain name provider, [GoDaddy] (https://uk.godaddy.com/). I set up **Google Site Verification** in order to keep track of the site's performance using [Google Webmaster tools] (https://www.google.com/webmasters/#?modal_active=none).
 The site is live at www.oompahbrass.com
 
 
@@ -61,3 +61,12 @@ The site is live at www.oompahbrass.com
 * All links were tested to make sure they were working and that they were opening in a new window.
 * All media/carousel/soundcloud elements were checked for functionality. 
 * I tested the website on various devices such as iPhone, Android phone and iPad.
+
+### Acknowledgements
+
+I used the following sites for inspiration in this project:
+
+* https://olddirtybrasstards.co.uk/
+* https://www.squarespace.com/templates/music
+
+
