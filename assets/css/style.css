@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700|Roboto:300,400,500');
-
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,700|Roboto:300,400,500");
 
 /* Colours 
 Light grey: #e8e3e7
@@ -9,14 +8,14 @@ Bright pink: #db2785
 /* ==========================General */
 
 .body-bg-black {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #e8e3e7;
   background-color: #000000;
 }
 
-.page-wrapper{
-  width:100%; 
-  overflow:hidden; 
+.page-wrapper {
+  width: 100%;
+  overflow: hidden;
 }
 
 h1,
@@ -25,10 +24,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
-.no-padding{
+.no-padding {
   margin: 0;
 }
 
@@ -120,7 +119,6 @@ h6 {
   color: #ffffff;
 }
 
-
 /* =========================Index Page*/
 
 .main-heading {
@@ -175,7 +173,7 @@ h6 {
 .list-title {
   font-size: 18px;
   line-height: 1.5;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .list-item {
@@ -188,7 +186,7 @@ h6 {
   font-size: 18px;
 }
 
-.text-block-end-hr{
+.text-block-end-hr {
   margin-top: 40px;
 }
 
@@ -259,12 +257,12 @@ h6 {
     margin-bottom: 0;
     padding-top: 0;
   }
-  
-  .main-lead{
+
+  .main-lead {
     font-size: 18px;
   }
-  
-  .page-header{
+
+  .page-header {
     font-size: 24;
   }
 
@@ -313,7 +311,7 @@ h6 {
   }
 
   /*==========MQ- media page*/
-  
+
   .hr-bottom {
     margin-bottom: 40px;
   }
