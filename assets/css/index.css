@@ -8,7 +8,7 @@
       rgba(0, 0, 0, 0.7) 95%,
       rgba(0, 0, 0, 0.9) 100%
     ),
-    url("../images/nathan.JPG");
+    url("../images/Oktoberfest-oompah-brass.jpg");
   background-size: cover;
   background-position: top;
 }
@@ -17,10 +17,15 @@
   margin-top: 80px;
 }
 
+.carousel-item {
+  min-height: 400px; 
+}
+
+
 @media (min-width: 992px) {
   .index-bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../images/nathan.JPG");
+      url("../images/Oktoberfest-oompah-brass.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

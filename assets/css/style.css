@@ -334,3 +334,18 @@ h6 {
     font-size: 36px;
   }
 }
+
+.oompah-logo {
+  max-width: 500px;
+  padding: 0 24px;
+}
+
+.image-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1024px) {
+  .oompah-logo {
+    max-width: 90%;
+  }
+}
