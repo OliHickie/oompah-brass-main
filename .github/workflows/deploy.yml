@@ -29,6 +29,18 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          VITE_SERVICE_KEY: ${{ secrets.VITE_SERVICE_KEY }}
+          VITE_TEMPLATE_KEY: ${{ secrets.VITE_TEMPLATE_KEY }}
+          VITE_PUBLIC_KEY: ${{ secrets.VITE_PUBLIC_KEY }}
+          VITE_AWS_BUCKET: ${{ secrets.VITE_AWS_BUCKET }}
+          VITE_AWS_REGION: ${{ secrets.VITE_AWS_REGION }}
+          VITE_AWS_SECRET_KEY: ${{ secrets.VITE_AWS_SECRET_KEY }}
+          VITE_AWS_ACCESS_KEY: ${{ secrets.VITE_AWS_ACCESS_KEY }}
+          VITE_UPLOAD_IMAGE_PASSWORD: ${{ secrets.VITE_UPLOAD_IMAGE_PASSWORD }}
+          VITE_CALENDAR_KEY: ${{ secrets.VITE_CALENDAR_KEY }}
+          VITE_CALENDAR_ID: ${{ secrets.VITE_CALENDAR_ID }}
+
 
       - name: Add .nojekyll (prevent Jekyll filtering)
         run: echo > dist/.nojekyll
