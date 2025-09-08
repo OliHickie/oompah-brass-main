@@ -11,7 +11,7 @@ onMounted(async () => {
     .sort((a, b) => a.order - b.order)
     .map(item => ({
       ...item,
-      url: `/src/assets/images/gallery/${item.name}`
+      url: `/gallery/${item.name}`
     }))
 })
 </script>
