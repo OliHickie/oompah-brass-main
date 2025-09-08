@@ -4,7 +4,7 @@ import { ref, onMounted } from 'vue'
 const photos = ref([])
 
 onMounted(async () => {
-  const res = await fetch('/src/data/gallery.json')
+  const res = await fetch('/data/gallery.json')
   const data = await res.json()
 
   photos.value = data
