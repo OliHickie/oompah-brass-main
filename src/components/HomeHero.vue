@@ -10,10 +10,10 @@ import Button from '@/components/PrimaryBtn.vue'
       className="absolute top-1 w-full bg-gradient-to-r from-yellow-400/75 via-black to-yellow-400/75 text-white text-center z-10 p-2 lg:p-2 shadow-md ">
       <p className="font-semibold tracking-wide">
         <span class="animate-pulse">✨</span>
-        🎅 Christmas 2025 bookings now open
+        🎅🏻 Christmas 2025 bookings now open
         <router-link to="contact"
           className="underline font-light italic ml-2 hover:text-pink transition-colors whitespace-nowrap">Enquire today
-          →</router-link> 🎅
+          →</router-link> 🎅🏻
         <span class="animate-pulse">✨</span>
       </p>
     </div>
