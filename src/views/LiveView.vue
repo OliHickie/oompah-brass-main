@@ -50,13 +50,15 @@ onMounted(fetchEvents);
 <template>
   <div class="relative">
     <!-- Sticky Wrapper -->
-    <div class="absolute  top-0 left-0 w-full h-full">
+    <div class="absolute top-0 left-0 w-full h-full">
       <div class="sticky -mt-40 top-0 h-screen">
         <div class="h-20"></div>
         <img 
           src="../assets/images/oompah-brass-patrick-stage.jpg" 
-          alt="Background" 
+          alt="Oompah brass performing on stage at Oktoberfest festival " 
           class="h-full w-full object-cover"
+          loading="eager"
+          fetchpriority="high"
         />
       </div>
     </div>

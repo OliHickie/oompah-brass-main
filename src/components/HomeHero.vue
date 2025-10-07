@@ -3,7 +3,7 @@ import Button from '@/components/PrimaryBtn.vue'
 </script>
 
 <template>
-  <div class="lg:flex lg:h-[60vh] xl:h-[75vh] overflow-hidden relative">
+  <header class="lg:flex lg:h-[60vh] xl:h-[75vh] overflow-hidden relative">
 
     <!-- Top Announcement Bar -->
     <div
@@ -31,7 +31,7 @@ import Button from '@/components/PrimaryBtn.vue'
         The original Rock 'n' Roll Oompah Band
       </h2>
       <Button to="/contact" class="block lg:text-xl">
-        Get in touch
+        Enquire now
       </Button>
     </div>
 
@@ -40,7 +40,5 @@ import Button from '@/components/PrimaryBtn.vue'
       style="clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);">
       <slot />
     </div>
-  </div>
-
-
+  </header>
 </template>

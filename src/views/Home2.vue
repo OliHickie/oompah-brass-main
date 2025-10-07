@@ -11,6 +11,9 @@ import ExternalLinkIcon from '@/components/icons/ExternalLinkIcon.vue'
       <img 
         src="../assets/images/oompah-brass-jumping.jpg"
         class="h-full w-full object-cover"
+        alt="Oompah Brass jumping in the air wearing pink t-shirts at party"
+        loading="eager"
+        fetchpriority="high"
       >
     </HomeHero>
 
@@ -76,7 +79,8 @@ import ExternalLinkIcon from '@/components/icons/ExternalLinkIcon.vue'
         <img 
           src="../assets/images/benny-trumpet-oompah-brass.jpg" 
           alt="Benny Beavis passionately playing the trumpet Durham Brass Festival in a glittery pink jacket" 
-          class="lg:w-1/2 object-cover lazy-load">
+          class="lg:w-1/2 object-cover"
+          loading="lazy">
       </div>
     </div>
 
@@ -90,6 +94,7 @@ import ExternalLinkIcon from '@/components/icons/ExternalLinkIcon.vue'
     <img 
       src="../assets/images/oompah-brass-scream.jpg" 
       alt="Oompah Brass - in pink t-shirts imitating Edvard Munch painting 'The Scream'" 
-      class="w-full relative lazyload">
+      class="w-full relative"
+      loading="lazy">
   </div>
 </template>
