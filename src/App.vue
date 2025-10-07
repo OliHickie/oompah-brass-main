@@ -8,7 +8,8 @@ import AudioPlayer from '@/components/AudioPlayer.vue'
 <template>
   <main class="min-h-screen flex flex-col relative bg-black text-white">
     <Nav />
-    <RouterView class="flex-grow mt-16 lg:mt-20" />
+    <RouterView class="flex-grow mt-20 lg:mt-20" />
+    <!-- <RouterView class="flex-grow mt-16 lg:mt-20" /> -->
     <AudioPlayer class="fixed bottom-4 right-6 z-40" />
     <Footer class="z-30" />
   </main>
