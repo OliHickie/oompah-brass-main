@@ -20,7 +20,7 @@ import ExternalLinkIcon from '@/components/icons/ExternalLinkIcon.vue'
     <div>
       <!-- Highlight Quote Section -->
       <section class="max-md:flex-col max-md:items-center flex justify-center items-end md:space-x-12 py-12 md:py-24">
-        <h3 class="text-xl lg:text-3xl font-semibold font-header italic">"Legends in Lederhosen"</h3>
+        <h2 class="text-xl lg:text-3xl font-semibold font-header italic">"Legends in Lederhosen"</h2>
         <p class="lg:text-right text-lg lg:text-xl text-pink">Chris Evans, BBC Radio 2</p>
       </section>
 

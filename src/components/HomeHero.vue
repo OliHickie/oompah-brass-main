@@ -24,12 +24,10 @@ import Button from '@/components/PrimaryBtn.vue'
     <!-- Left Section -->
     <div class="relative flex flex-col justify-center text-white px-8 py-4 lg:pr-0 lg:w-2/6 -mt-8 lg:m-0
   from-black to-pink bg-gradient-to-r lg:from-pink/50 lg:via-transparent lg:to-transparent space-y-4 lg:space-y-10">
-      <h1 class="text-4xl xl:text-6xl tracking-tighter font-medium font-header uppercase">
-        Oompah Brass
+      <h1 class="text-4xl xl:text-6xl tracking-tighter font-medium font-header uppercase leading-tight  space-y-4 lg:space-y-10">
+        <span class="block">Oompah Brass</span>
+        <span class="block text-lg lg:text-2xl font-light tracking-wide">The Original Rock 'n' Roll Oompah Band</span>
       </h1>
-      <h2 class="text-lg lg:text-2xl uppercase font-light">
-        The original Rock 'n' Roll Oompah Band
-      </h2>
       <Button to="/contact" class="block lg:text-xl">
         Enquire now
       </Button>
