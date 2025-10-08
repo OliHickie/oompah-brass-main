@@ -6,6 +6,7 @@ import bbcRadio3Logo from '../assets/images/logos/BBC_Radio_3_2022.svg';
 import bbcRadio6MusicLogo from '@/assets/images/logos/bbc-radio-6-music.png';
 import bbcRadioOneLogo from '../assets/images/logos/BBC_Radio_1_2021.svg';
 import bbcTheOneShowLogo from '@/assets/images/logos/bbc-the-one-show.png';
+import bbcTwoLogo from '../assets/images/logos/bbc-two-logo.png';
 import bestivalLogo from '../assets/images/logos/Bestival-Logo-lrg.webp';
 import isleOfWightFestivalLogo from '../assets/images/logos/iow-festival.png';
 import itvLogo from '@/assets/images/logos/itv-logo.svg';
@@ -19,6 +20,7 @@ const photos = ref([
   { url: itvLogo, alt: 'ITV Logo' },
   { url: bbcTheOneShowLogo, alt: 'BBC The One Show' },
   { url: bestivalLogo, alt: 'Bestival Logo' },
+  { url: bbcTwoLogo, alt: 'BBC Two' },
   { url: bbcRadio3Logo, alt: 'BBC Radio 3' },
   { url: radioFiveLiveLogo, alt: 'Radio Five Live' },
   { url: bbcRadio6MusicLogo, alt: 'BBC Radio 6 Music' },

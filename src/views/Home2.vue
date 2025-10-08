@@ -3,6 +3,7 @@ import Button from '@/components/PrimaryBtn.vue'
 import HomeHero from '@/components/HomeHero.vue'
 import ExternalLinkIcon from '@/components/icons/ExternalLinkIcon.vue'
 import Marquee from '@/components/Marquee.vue'
+import SocialMediaSection from '@/components/SocialMediaSection.vue'
 
 </script>
 
@@ -50,7 +51,7 @@ import Marquee from '@/components/Marquee.vue'
             <a href="https://haizetara.eus/en/home-2/" class=" underline">
               International Haizetara Street Band competition
               <ExternalLinkIcon class="aspect-square h-3 mx-1 inline" />
-            </a>.
+            </a>
           </p>
           <!-- Highlighted Quote -->
           <p class="md:text-lg border-y-2 border-pink py-4 md:py-8 text-center md:mx-8">
@@ -86,13 +87,8 @@ import Marquee from '@/components/Marquee.vue'
       </div>
     </div>
 
-    <section class="text-center pb-12 space-y-8">
-      <h3 class="text-3xl md:text-5xl font-semibold font-header italic text-pink">#OompahBrass</h3>
-      <p class="text-xl md:text-2xl">View our latest news and content</p>
-      <Button href="https://www.instagram.com/oompahbrass" target="_blank" class="block lg:text-xl mx-auto">
-        Follow us on Instragram
-      </Button>
-    </section>
+    <SocialMediaSection />
+
     <img src="../assets/images/oompah-brass-scream.jpg"
       alt="Oompah Brass - in pink t-shirts imitating Edvard Munch painting 'The Scream'" class="w-full relative"
       loading="lazy">
