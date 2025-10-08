@@ -30,8 +30,8 @@ console.log(photos.value)
 
 <template>
   <div class="bg-[#fff] h-20 md:h-28 flex items-center mb-10">
-    <Vue3Marquee :duration="50" :reverse="false">
-      <span v-for="photo in photos" :key="photo.alt" class="mx-6 md:mx-12 flex items-center">
+    <Vue3Marquee :duration="30" :reverse="false">
+      <span v-for="photo in photos" :key="photo.alt" class="mx-4 md:mx-10 flex items-center">
         <img :src="photo.url" :alt="photo.alt" class="h-10 md:h-12" />
       </span>
     </Vue3Marquee>
