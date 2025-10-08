@@ -30,15 +30,24 @@ const iconClasses = 'w-10 md:w-12 aspect-square inline-block border-2 rounded-fu
   </div>
 
   <!-- Call-to-Action -->
-  <div class="mt-6">
-    <p class="text-gray-300">Catch us live at our next show!</p>
-    <PrimaryBtn to="/live" class="mt-2 mx-auto">
-      See upcoming shows
-    </PrimaryBtn>
+  <div class="mt-6 flex flex-col md:flex-row md:justify-center md:space-x-36 space-y-6 md:space-y-0">
+    <aside>
+
+      <p class="text-gray-300">Catch us live at our next show!</p>
+      <PrimaryBtn to="/live" class="mt-2 mx-auto">
+        See upcoming shows
+      </PrimaryBtn>
+    </aside>
+    <section class="text-center md:text-left">
+      <p>Oompah Brass</p>
+      <p>London, UK</p>
+      <p>Email: <a href="mailto:info@oompahbrass.com" class="underline">info@oompahbrass.com</a></p>
+      <p>Phone: <a href="tel:+447967604032" class="underline">+44 7967 604032</a></p>
+    </section>
   </div>
 
   <!-- Copyright -->
-  <p class="text-white pt-8">&copy; {{ Year }} OOMPAH BRASS</p>
+  <p class="text-white pt-12">&copy; {{ Year }} OOMPAH BRASS</p>
 </footer>
 
 </template>
