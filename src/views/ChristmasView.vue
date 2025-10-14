@@ -104,7 +104,7 @@ const tracks = [
     <!-- SoundCloud Grid -->
     <section class="bg-black px-4 pb-20 mt-10">
       <div class="container mx-auto text-center">
-        <h3 class="text-xl lg:text-3xl font-header italic mb-6">🎶 Listen to Oompah Brass</h3>
+        <h3 class="text-xl lg:text-3xl font-header italic mb-6">A taste of Christmas Oompah!</h3>
         <p class="text-md md:text-lg max-w-3xl mx-auto mb-10">
           Get in the festive spirit with these high-energy Christmas tracks!
         </p>
