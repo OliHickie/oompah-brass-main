@@ -1,17 +1,15 @@
 <script setup>
-import backstage from '../assets/images/oompah-brass-backstage.jpg';
-import bermuda from '../assets/images/oompah-brass-bermuda.png';
-import durham from '../assets/images/oompah-brass-durham-brass-festiv.jpg';
-import gala from '../assets/images/oompah-brass-gala-dinner.jpg';
-
 import Button from '@/components/PrimaryBtn.vue';
 
-const photos = [
-  { src: backstage, alt: '"Backstage at Oktoberfest in Colchester"' },
-  { src: bermuda, alt: '"Soaking up the sun back in Bermuda!"' },
-  { src: durham, alt: '"Having fun at Durham Brass Festival"' },
-  { src: gala, alt: '"About to perform at a Gala dinner event in London"' },
-];
+
+defineProps({
+  photos: {
+    type: Array,
+    required: true,
+    default: () => [],
+  },
+})
+
 </script>
 
 <template>
@@ -32,15 +30,16 @@ const photos = [
 
     <!-- Photo Grid -->
     <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-12 max-w-6xl w-full">
-      <div 
-        v-for="(photo, index) in photos" 
-        :key="index" 
+        <div
+        v-for="(photo, index) in photos"
+        :key="index"
         class="relative overflow-hidden rounded-3xl"
       >
         <img
           :src="photo.src"
           :alt="photo.alt"
           class="w-full aspect-square object-cover"
+          loading="lazy"
         />
       </div>
     </div>
