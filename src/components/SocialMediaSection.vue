@@ -35,12 +35,12 @@ const photos = [
       <div 
         v-for="(photo, index) in photos" 
         :key="index" 
-        class="relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition duration-500"
+        class="relative overflow-hidden rounded-3xl"
       >
         <img
           :src="photo.src"
           :alt="photo.alt"
-          class="w-full aspect-square object-cover transform group-hover:scale-105 transition duration-500"
+          class="w-full aspect-square object-cover"
         />
       </div>
     </div>
