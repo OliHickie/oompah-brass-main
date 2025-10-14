@@ -5,6 +5,20 @@ import ExternalLinkIcon from '@/components/icons/ExternalLinkIcon.vue'
 import Marquee from '@/components/Marquee.vue'
 import SocialMediaSection from '@/components/SocialMediaSection.vue'
 
+
+import backstage from '../assets/images/oompah-brass-backstage.jpg';
+import bermuda from '../assets/images/oompah-brass-bermuda.png';
+import durham from '../assets/images/oompah-brass-durham-brass-festiv.jpg';
+import gala from '../assets/images/oompah-brass-gala-dinner.jpg';
+
+
+const photos = [
+  { src: backstage, alt: '"Backstage at Oktoberfest in Colchester"' },
+  { src: bermuda, alt: '"Soaking up the sun back in Bermuda!"' },
+  { src: durham, alt: '"Having fun at Durham Brass Festival"' },
+  { src: gala, alt: '"About to perform at a Gala dinner event in London"' },
+];
+
 </script>
 
 <template>
@@ -87,7 +101,7 @@ import SocialMediaSection from '@/components/SocialMediaSection.vue'
       </div>
     </div>
 
-    <SocialMediaSection />
+    <SocialMediaSection :photos="photos" />
 
     <img src="../assets/images/oompah-brass-scream.jpg"
       alt="Oompah Brass - in pink t-shirts imitating Edvard Munch painting 'The Scream'" class="w-full relative"
