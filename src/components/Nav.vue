@@ -15,6 +15,7 @@ const links = [
     submenuOpen: false
   },
   // { name: 'Education', path: '/education' },
+  { name: 'Xmas', path: '/christmas' },
   { name: 'Live', path: '/live' },
   { name: 'Contact', path: '/contact' },
 ]
@@ -23,6 +24,7 @@ const mobileLinks = [
   { name: 'Home', path: '/' },
   { name: 'Gallery', path: '/media/gallery' },
   { name: 'Videos', path: '/media/videos' },
+  { name: 'Xmas', path: '/christmas' },
   // { name: 'Education', path: '/education' },
   { name: 'Live', path: '/live' },
   { name: 'Contact', path: '/contact' },

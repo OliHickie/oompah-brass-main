@@ -77,10 +77,10 @@ const tracks = [
       </div>
 
       <div class="px-4 lg:w-3/4">
-        <h1 class="hidden md:block text-4xl md:text-6xl text-white font-header">
+        <h1 class="hidden md:block text-4xl md:text-6xl text-white font-header text-center">
           Christmas with Oompah Brass
         </h1>
-        <h2 class="text-2xl lg:text-4xl font-header italic font-semibold mt-10">
+        <h2 class="text-2xl lg:text-4xl font-header italic font-medium mt-10">
           Festive favourites, reimagined with the unmistakable <span class="text-pink">Oompah Brass</span> twist.
         </h2>
         <p class="text-md md:text-lg mt-8">
