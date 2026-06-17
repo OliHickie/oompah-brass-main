@@ -3,6 +3,7 @@ import InstagramLogo from '@/components/icons/InstagramLogo.vue'
 import FacebookLogo from '@/components/icons/FacebookLogo.vue'
 import BandcampLogo from '@/components/icons/BandcampLogo.vue'
 import YoutubeLogo from '@/components/icons/YoutubeLogo.vue'
+import TikTokLogo from '@/components/icons/TikTokLogo.vue'
 import PrimaryBtn from '@/components/PrimaryBtn.vue'
 
 const Year = new Date().getFullYear()
@@ -15,16 +16,19 @@ const iconClasses = 'w-10 md:w-12 aspect-square inline-block border-2 rounded-fu
  <footer class="text-center text-white pb-24 bg-black">
   <!-- Social Media Links -->
   <div class="bg-pink py-4 md:py-6 flex justify-center space-x-4 md:space-x-10">
-    <a href="https://www.instagram.com" target="_blank">
+    <a href="https://www.instagram.com/oompahbrass/" target="_blank">
       <InstagramLogo :class="iconClasses" />
     </a>
-    <a href="https://www.facebook.com" target="_blank">
+    <a href="https://www.tiktok.com/@oompahbrass" target="_blank">
+      <TikTokLogo :class="iconClasses" />
+    </a>
+    <a href="https://www.facebook.com/oompahbrass" target="_blank">
       <FacebookLogo :class="iconClasses" />
     </a>
-    <a href="https://www.youtube.com" target="_blank">
+    <a href="https://www.youtube.com/user/oompahBrass" target="_blank">
       <YoutubeLogo :class="iconClasses" />
     </a>
-    <a href="https://www.bandcamp.com" target="_blank">
+    <a href="https://oompahbrass.bandcamp.com/" target="_blank">
       <BandcampLogo :class="iconClasses" />
     </a>
   </div>
