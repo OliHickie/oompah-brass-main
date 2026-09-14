@@ -22,8 +22,12 @@ const form = ref({
   message: null
 })
 const emailSent = ref(false)
+const isSubmitting = ref(false)
+const sendError = ref(false)
 
 const checkForm = () => {
+  if (isSubmitting.value) return
+
   if (!form.value.email && !form.value.number) {
     errors.value.contactError = true;
   } else {
@@ -45,7 +49,11 @@ const checkForm = () => {
 }
 
 const sendMessage = () => {
+  if (isSubmitting.value) return
+
   const formData = document.getElementById('form')
+  isSubmitting.value = true
+  sendError.value = false
 
   emailjs
     .sendForm(import.meta.env.VITE_SERVICE_KEY, import.meta.env.VITE_TEMPLATE_KEY, formData, {
@@ -57,6 +65,8 @@ const sendMessage = () => {
         console.log('SUCCESS!');
       },
       (error) => {
+        isSubmitting.value = false
+        sendError.value = true
         console.log('FAILED...', import.meta.env.VITE_SERVICE_KEY, import.meta.env.VITE_TEMPLATE_KEY, formData, {
           publicKey: import.meta.env.VITE_PUBLIC_KEY,
         });
@@ -90,7 +100,7 @@ const resetForm = () => {
         <p class="text-md lg:text-xl my-4">We'd love to hear from you!</p>
         <ContactLinks />
       </div>
-      <form id="form" class="max-w-lg mx-auto">
+      <form id="form" class="max-w-lg mx-auto" @submit.prevent="checkForm">
         <FormGroup>
           <Label for="contactName" required>Name</Label>
           <Error v-if="errors.nameError">Please provide a contact name</Error>
@@ -115,7 +125,16 @@ const resetForm = () => {
         </FormGroup>
         <div class="text-center mt-8">
           <Error v-if="errors.contactError">Please provide either an email or phone number so we may contact you</Error>
-          <Button @click.prevent="checkForm()">Submit</Button>
+          <Error v-if="sendError">Something went wrong sending your message. Please try again.</Error>
+          <Button type="submit" :disabled="isSubmitting">
+            <span class="inline-flex items-center justify-center gap-2">
+              <svg v-if="isSubmitting" class="h-4 w-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+              {{ isSubmitting ? 'Sending...' : 'Submit' }}
+            </span>
+          </Button>
         </div>
       </form>
     </div>
