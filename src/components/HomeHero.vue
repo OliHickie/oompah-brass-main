@@ -1,5 +1,9 @@
 <script setup>
+import { computed } from 'vue'
 import Button from '@/components/PrimaryBtn.vue'
+import { bannerOffer } from '@/seasonBanner'
+
+const offer = computed(() => bannerOffer())
 </script>
 
 <template>
@@ -8,12 +12,14 @@ import Button from '@/components/PrimaryBtn.vue'
     <!-- Top Announcement Bar -->
     <div
       class="absolute top-1 w-full bg-gradient-to-r from-yellow-400/75 via-black to-yellow-400/75 text-white text-center z-10 p-2 lg:p-2 shadow-md ">
-      <p class="font-semibold tracking-wide">
-        <router-link to="/christmas" class="hover:text-pink transition-colors">
-          Christmas 2026 bookings are open
-          <span class="underline font-light italic ml-2 whitespace-nowrap">See the set →</span>
-        </router-link>
-      </p>
+      <client-only>
+        <p v-if="offer" class="font-semibold tracking-wide">
+          <router-link :to="offer.to" class="hover:text-pink transition-colors">
+            {{ offer.text }}
+            <span class="underline font-light italic ml-2 whitespace-nowrap">{{ offer.cta }}</span>
+          </router-link>
+        </p>
+      </client-only>
     </div>
 
     <div class="lg:hidden opacity-100">
