@@ -71,8 +71,8 @@ onServerPrefetch(fetchEvents);
       <div class="mb-6 p-4 border border-gray-300 rounded-lg bg-black bg-opacity-80 backdrop-blur-sm">
         <h1 class="font-header text-3xl md:text-4xl uppercase">Upcoming shows</h1>
         <p class="mt-3 text-lg">
-          Live dates for Oompah Brass, a London oompah band playing across the UK. For a private date, see
-          <router-link to="/hire" class="text-pink underline">hire an oompah band</router-link>.
+          Live dates for Oompah Brass, a London oompah band playing across the UK. To book the band, see
+          <router-link to="/hire" class="text-pink underline">our information page</router-link>.
         </p>
       </div>
       <ul v-if="events.length" class="space-y-4">
