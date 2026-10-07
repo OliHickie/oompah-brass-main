@@ -55,6 +55,7 @@ const iconClasses = 'w-10 md:w-12 aspect-square inline-block border-2 rounded-fu
     <router-link to="/live" class="hover:text-pink">Live dates</router-link>
     <router-link to="/media/gallery" class="hover:text-pink">Photos</router-link>
     <router-link to="/media/videos" class="hover:text-pink">Videos</router-link>
+    <router-link to="/media/listen" class="hover:text-pink">Listen</router-link>
     <router-link to="/christmas" class="hover:text-pink">Christmas</router-link>
     <router-link to="/contact" class="hover:text-pink">Contact</router-link>
   </nav>

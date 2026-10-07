@@ -22,6 +22,11 @@ export const routes = [
         component: () => import('../views/VideoView.vue'),
       },
       {
+        path: 'listen',
+        name: 'listen',
+        component: () => import('../views/ListenView.vue'),
+      },
+      {
         path: 'gallery',
         name: 'gallery',
         component: () => import('../views/GalleryView.vue'),

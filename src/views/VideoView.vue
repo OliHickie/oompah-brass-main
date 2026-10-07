@@ -9,8 +9,8 @@ const videos = [
     title: "Oktoberfest highlights"
   },
   {
-    videoUrl: "2fxIajBC6l0&t",
-    image: "	https://i.ytimg.com/vi/2fxIajBC6l0/hq720.jpg?sqp=-…HIgUyhBMA8=&rs=AOn4CLAawI6emu3OwCtkcLNLKBstsXn3DQ",
+    videoUrl: "2fxIajBC6l0",
+    image: "https://img.youtube.com/vi/2fxIajBC6l0/hqdefault.jpg",
     title: "Bohemian Rhapsody"
   },
   {

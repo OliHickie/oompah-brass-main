@@ -19,6 +19,9 @@ const showHub = computed(() => route.name === 'media')
       <router-link to="/media/videos" class="px-6 py-3 border border-white uppercase font-semibold hover:text-pink hover:border-pink">
         Videos
       </router-link>
+      <router-link to="/media/listen" class="px-6 py-3 border border-white uppercase font-semibold hover:text-pink hover:border-pink">
+        Listen
+      </router-link>
     </div>
   </section>
   <RouterView v-else />

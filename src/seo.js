@@ -88,6 +88,15 @@ export const pages = {
     changefreq: 'monthly',
     sitemap: true,
   },
+  listen: {
+    title: 'Listen | Oompah Brass',
+    description: 'Listen to Oompah Brass recordings. Rock and pop classics arranged for oompah band, from the London five-piece.',
+    path: '/media/listen',
+    crumb: 'Listen',
+    priority: '0.6',
+    changefreq: 'monthly',
+    sitemap: true,
+  },
   christmas: {
     title: 'Christmas Oompah Band for Hire | Oompah Brass',
     description: 'Book Oompah Brass for a Christmas party in London or across the UK. Brass versions of Fairytale of New York, All I Want for Christmas Is You and Walking in the Air.',

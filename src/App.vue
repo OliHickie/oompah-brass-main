@@ -1,13 +1,17 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHead } from '@unhead/vue'
 import Nav from '@/components/Nav.vue'
 import Footer from '@/components/Footer.vue'
 import AudioPlayer from '@/components/AudioPlayer.vue'
 import { OG_IMAGE, canonicalUrl, jsonLdFor, pages } from '@/seo'
+import { trackVisit } from '@/visitReport'
 
 const route = useRoute()
+
+onMounted(() => trackVisit(route))
+watch(() => route.fullPath, () => trackVisit(route))
 
 useHead(computed(() => {
   const page = pages[route.name] || {
@@ -57,7 +61,7 @@ useHead(computed(() => {
     <Nav />
     <RouterView class="flex-grow mt-20 lg:mt-20" />
     <!-- <RouterView class="flex-grow mt-16 lg:mt-20" /> -->
-    <AudioPlayer class="fixed bottom-4 right-6 z-40" />
+    <AudioPlayer v-if="route.name !== 'listen'" class="fixed bottom-4 right-6 z-40" />
     <Footer class="z-30" />
   </main>
 </template>
