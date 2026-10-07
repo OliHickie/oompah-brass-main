@@ -9,12 +9,10 @@ import Button from '@/components/PrimaryBtn.vue'
     <div
       class="absolute top-1 w-full bg-gradient-to-r from-yellow-400/75 via-black to-yellow-400/75 text-white text-center z-10 p-2 lg:p-2 shadow-md ">
       <p class="font-semibold tracking-wide">
-        <!-- <span class="animate-pulse">✨</span> -->
-        Oktoberfest 2026 now open
-        <router-link to="/contact"
-          class="underline font-light italic ml-2 hover:text-pink transition-colors whitespace-nowrap">Enquire today
-          →</router-link>
-        <!-- <span class="animate-pulse">✨</span> -->
+        <router-link to="/christmas" class="hover:text-pink transition-colors">
+          Christmas 2026 bookings are open
+          <span class="underline font-light italic ml-2 whitespace-nowrap">See the set →</span>
+        </router-link>
       </p>
     </div>
 
