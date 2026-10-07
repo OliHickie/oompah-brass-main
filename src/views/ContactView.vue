@@ -96,8 +96,8 @@ const resetForm = () => {
     </div>
     <div v-if="!emailSent" class="lg:w-1/2 p-4 lg:p-12">
       <div class="text-center mb-4">
-        <h1 class="font-header text-2xl lg:text-4xl uppercase">Get in touch</h1>
-        <p class="text-md lg:text-xl my-4">We'd love to hear from you!</p>
+        <h1 class="font-header text-2xl lg:text-4xl uppercase">Book Oompah Brass</h1>
+        <p class="text-md lg:text-xl my-4">We'd love to hear from you. Oompah Brass is based in London and plays across the UK and abroad.</p>
         <ContactLinks />
       </div>
       <form id="form" class="max-w-lg mx-auto" @submit.prevent="checkForm">

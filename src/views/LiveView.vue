@@ -1,11 +1,13 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onServerPrefetch } from 'vue';
 
 const events = ref([]);
 const calendarId = import.meta.env.VITE_CALENDAR_ID;
 const apiKey = import.meta.env.VITE_CALENDAR_KEY;
 
 const fetchEvents = async () => {
+  if (!calendarId || !apiKey) return
+
   const timeMin = new Date().toISOString();
   const url = `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${apiKey}&timeMin=${timeMin}&singleEvents=true&orderBy=startTime`;
 
@@ -45,6 +47,7 @@ const getMapsLink = (location) => {
 };
 
 onMounted(fetchEvents);
+onServerPrefetch(fetchEvents);
 </script>
 
 <template>
@@ -65,7 +68,13 @@ onMounted(fetchEvents);
 
     <!-- Content Section -->
     <div class="relative z-10 py-16 max-w-2xl mx-auto px-4">
-      <h2 class="text-2xl font-bold mb-4 text-white">Upcoming Gigs</h2>
+      <div class="mb-6 p-4 border border-gray-300 rounded-lg bg-black bg-opacity-80 backdrop-blur-sm">
+        <h1 class="font-header text-3xl md:text-4xl uppercase">Upcoming shows</h1>
+        <p class="mt-3 text-lg">
+          Live dates for Oompah Brass, a London oompah band playing across the UK. For a private date, see
+          <router-link to="/hire" class="text-pink underline">hire an oompah band</router-link>.
+        </p>
+      </div>
       <ul v-if="events.length" class="space-y-4">
         <li 
           v-for="event in events" 
@@ -99,6 +108,9 @@ onMounted(fetchEvents);
         </li>
         
       </ul>
+      <p v-else class="p-4 border border-gray-300 rounded-lg bg-black bg-opacity-80 backdrop-blur-sm text-lg">
+        Dates are published from the band's diary. If nothing is listed yet, get in touch and we will tell you what is coming up.
+      </p>
 
       <p class="mt-8 bg-black bg-opacity-80 backdrop-blur-sm p-4 rounded-lg text-gray-300 text-lg text-center">
           For future gigs, or to enquire about a date, please <router-link to="/contact" class="text-pink underline">get in touch</router-link>.

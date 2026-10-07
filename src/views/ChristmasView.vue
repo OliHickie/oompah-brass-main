@@ -2,33 +2,6 @@
 import Button from '@/components/PrimaryBtn.vue'
 import Marquee from '@/components/Marquee.vue'
 import SocialMediaSection from '@/components/SocialMediaSection.vue'
-import { useHead } from '@vueuse/head'
-
-useHead({
-  title: 'Oompah Brass | Christmas Party Band – Festive Live Entertainment UK',
-  meta: [
-    {
-      name: 'description',
-      content: 'Book Oompah Brass for your Christmas party, corporate event, or winter festival. High-energy brass versions of Christmas classics like Fairytale of New York and All I Want for Christmas.'
-    },
-    {
-      property: 'og:title',
-      content: 'Oompah Brass – The Ultimate Christmas Party Band'
-    },
-    {
-      property: 'og:description',
-      content: 'Experience the festive magic with Oompah Brass. Live brass, Christmas hits, and unmatched party energy!'
-    },
-    {
-      property: 'og:image',
-      content: 'https://yourdomain.com/path-to-social-image.jpg'
-    },
-    {
-      name: 'keywords',
-      content: 'Christmas band, Christmas entertainment, Oompah band, corporate Christmas party, brass band, UK live band'
-    }
-  ]
-});
 
 import bennyChristmas from '../assets/images/christmas/oompah-brass-benny-christmas-party.jpg'
 import christmasEvent from '../assets/images/christmas/oompah-brass-christmas-event.jpg'

@@ -26,7 +26,6 @@ const photos = ref([
   { url: bbcRadio6MusicLogo, alt: 'BBC Radio 6 Music' },
   { url: kendalCallingFestivalLogo, alt: 'Kendal Calling Festival' },
 ]);
-console.log(photos.value)
 
 </script>
 

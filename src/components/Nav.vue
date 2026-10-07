@@ -17,6 +17,7 @@ const links = [
   // { name: 'Education', path: '/education' },
   // { name: 'Xmas', path: '/christmas' },
   { name: 'Live', path: '/live' },
+  { name: 'Hire', path: '/hire' },
   { name: 'Contact', path: '/contact' },
 ]
 
@@ -27,6 +28,7 @@ const mobileLinks = [
   // { name: 'Xmas', path: '/christmas' },
   // { name: 'Education', path: '/education' },
   { name: 'Live', path: '/live' },
+  { name: 'Hire', path: '/hire' },
   { name: 'Contact', path: '/contact' },
 ]
 
@@ -54,11 +56,13 @@ const navClasses = "fixed z-20 top-0 w-full bg-black font-header border-b-4 bord
 
 <template>
   <nav :class="['hidden lg:flex justify-end items-center px-12 py-6', navClasses]">
-    <img 
-      src="../assets/images/oompah-brass-logo.png" 
-      alt="Oompah Brass Logo"
-      class="h-28 fixed top-4 left-8"
-    >
+    <router-link to="/" class="fixed top-4 left-8 z-30">
+      <img
+        src="../assets/images/oompah-brass-logo.png"
+        alt="Oompah Brass"
+        class="h-28"
+      >
+    </router-link>
     <ul class="flex justify-center space-x-8 relative">
       <li v-for="link in links" :key="link.name">
         <router-link v-if="!link.submenu" :to="link.path" class="text-white 
@@ -95,11 +99,13 @@ const navClasses = "fixed z-20 top-0 w-full bg-black font-header border-b-4 bord
 
   <!-- Mobile nav -->
   <nav :class="['lg:hidden flex justify-between items-center px-4 py-2 z-40', navClasses]">
-    <img
-      src="../assets/images/oompah-brass-logo.png" 
-      alt="Oompah Brass Logo"
-      class="h-16 z-30"
-    >
+    <router-link to="/" class="z-30">
+      <img
+        src="../assets/images/oompah-brass-logo.png"
+        alt="Oompah Brass"
+        class="h-16"
+      >
+    </router-link>
     <button class="flex flex-col justify-center items-center group z-30" @click="toggleNav()">
       <span :class="['h-1 w-8 my-1 rounded transition ease transform duration-300', 
         navOpen ? 'rotate-45 translate-y-3 bg-pink' : 'bg-white'

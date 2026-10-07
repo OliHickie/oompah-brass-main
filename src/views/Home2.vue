@@ -89,8 +89,8 @@ const photos = [
             and laughter, and experience the unrivalled Oompah show!
           </p>
           <!-- Call-to-Action Button -->
-          <Button to="/contact" class="block lg:text-xl mx-auto">
-            Book us for your event
+          <Button to="/hire" class="block lg:text-xl mx-auto">
+            Hire an oompah band
           </Button>
         </section>
 
@@ -100,6 +100,25 @@ const photos = [
           class="lg:w-1/2 object-cover" loading="lazy">
       </div>
     </div>
+
+    <section class="container mx-auto px-4 md:px-8 lg:px-12 pb-24 max-w-3xl text-md lg:text-lg leading-relaxed space-y-6">
+      <h2 class="font-header text-3xl md:text-5xl uppercase text-center leading-none">
+        Oompah band for hire in London and across the UK
+      </h2>
+      <p>
+        Need an oompah band in London, or anywhere else in the UK? Oompah Brass is a five-piece based in London. We play Oktoberfest, weddings, festivals, company parties and private events, with rock and pop arranged for brass.
+      </p>
+      <p>
+        The
+        <router-link to="/hire" class="text-pink underline">hire page</router-link>
+        covers how a booking works, what we play, and where we travel.
+        Public shows are on
+        <router-link to="/live" class="text-pink underline">live dates</router-link>.
+      </p>
+      <Button to="/contact" class="block lg:text-xl mx-auto">
+        Book us for your event
+      </Button>
+    </section>
 
     <SocialMediaSection :photos="photos" />
 

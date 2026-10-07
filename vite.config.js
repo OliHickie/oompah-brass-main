@@ -11,7 +11,15 @@ export default defineConfig({
     vue(),
     vueJsx(),
   ],
-  define: {global: 'window'},
+  ssgOptions: {
+    script: 'async',
+    formatting: 'minify',
+    dirStyle: 'nested',
+    includedRoutes(paths) {
+      return paths.filter((path) => !path.includes('uploadimage'))
+    },
+  },
+  define: { global: 'globalThis' },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

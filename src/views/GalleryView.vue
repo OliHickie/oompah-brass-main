@@ -1,23 +1,18 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import galleryData from '../../public/data/gallery.json'
 
-const photos = ref([])
-
-onMounted(async () => {
-  const res = await fetch('/data/gallery.json')
-  const data = await res.json()
-
-  photos.value = data
-    .sort((a, b) => a.order - b.order)
-    .map(item => ({
-      ...item,
-      url: `/gallery/${item.name}`
-    }))
-})
+const photos = [...galleryData]
+  .sort((a, b) => a.order - b.order)
+  .map(item => ({
+    ...item,
+    url: `/gallery/${item.name}`
+  }))
 </script>
 
 <template>
   <div class="container mx-auto text-center px-4 py-24">
+    <h1 class="font-header text-4xl md:text-6xl uppercase mb-4">Oompah Brass photos</h1>
+    <p class="max-w-2xl mx-auto mb-10 text-lg">Live shots of the London oompah band at Oktoberfest, festivals, weddings and parties.</p>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       <img
         v-for="photo in photos"

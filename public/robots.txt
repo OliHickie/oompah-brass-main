@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /uploadimage
+Disallow: /education
+
+Sitemap: https://oompahbrass.com/sitemap.xml

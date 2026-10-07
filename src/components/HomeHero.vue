@@ -7,12 +7,12 @@ import Button from '@/components/PrimaryBtn.vue'
 
     <!-- Top Announcement Bar -->
     <div
-      className="absolute top-1 w-full bg-gradient-to-r from-yellow-400/75 via-black to-yellow-400/75 text-white text-center z-10 p-2 lg:p-2 shadow-md ">
-      <p className="font-semibold tracking-wide">
+      class="absolute top-1 w-full bg-gradient-to-r from-yellow-400/75 via-black to-yellow-400/75 text-white text-center z-10 p-2 lg:p-2 shadow-md ">
+      <p class="font-semibold tracking-wide">
         <!-- <span class="animate-pulse">✨</span> -->
-        Octoberfest 2026 now open
-        <router-link to="contact"
-          className="underline font-light italic ml-2 hover:text-pink transition-colors whitespace-nowrap">Enquire today
+        Oktoberfest 2026 now open
+        <router-link to="/contact"
+          class="underline font-light italic ml-2 hover:text-pink transition-colors whitespace-nowrap">Enquire today
           →</router-link>
         <!-- <span class="animate-pulse">✨</span> -->
       </p>
@@ -27,6 +27,7 @@ import Button from '@/components/PrimaryBtn.vue'
       <h1 class="text-4xl xl:text-6xl tracking-tighter font-medium font-header uppercase leading-tight  space-y-4 lg:space-y-10">
         <span class="block">Oompah Brass</span>
         <span class="block text-lg lg:text-2xl font-light tracking-wide">The Original Rock 'n' Roll Oompah Band</span>
+        <span class="block text-base lg:text-xl font-light normal-case tracking-normal">London oompah band, playing across the UK</span>
       </h1>
       <Button to="/contact" class="block lg:text-xl">
         Enquire now

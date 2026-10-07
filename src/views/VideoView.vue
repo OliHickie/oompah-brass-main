@@ -46,11 +46,14 @@ const selectVideo = (video) => {
 </script>
 
 <template>
-  <div class="py-16 px-4 md:px-10 2xl:px-20 lg:h-[90vh] flex flex-col lg:flex-row">
+  <div>
+  <h1 class="font-header text-4xl md:text-5xl uppercase px-4 md:px-10 pt-12">Oompah Brass videos</h1>
+  <div class="py-8 px-4 md:px-10 2xl:px-20 lg:h-[90vh] flex flex-col lg:flex-row">
     <!-- Video player -->
     <div class="border border-pink lg:w-3/4 w-full aspect-video bg-red p-2 lg:mx-8 rounded-xl relative">
       <iframe 
         :src="`https://www.youtube.com/embed/${activeVideo.videoUrl}`" 
+        :title="activeVideo.title"
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media;" 
         allowfullscreen 
@@ -87,6 +90,7 @@ const selectVideo = (video) => {
         </li>
       </ul>
     </div>
+  </div>
   </div>
 </template>
 
